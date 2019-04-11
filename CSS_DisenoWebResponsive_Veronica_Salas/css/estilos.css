@@ -1,0 +1,17 @@
+body{
+  font-family: Dancing Script;
+  background-color: #02010a;
+}
+
+.Cabecera{
+  background-color: #5b7989;
+  border-radius: 10px;
+}
+.Cabecera h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+.Cabecera p {
+  text-align: right;
+}
