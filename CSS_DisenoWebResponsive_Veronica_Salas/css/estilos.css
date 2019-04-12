@@ -1,12 +1,11 @@
 body{
   font-family: Dancing Script;
   background-color: #02010a;
-}
-
-#contenido{
   width: 1000px;
   margin:auto;
 }
+
+
 header{
   background-color: #5b7989;
   border-radius: 10px;
@@ -30,23 +29,35 @@ header h1{
   width: 70%;
 }
 
+img{
+  max-width: 100%;
+}
 
 #ImagenCentral{
   background-color: #82c3ab;
+  padding: 1em;
 }
 
 #ImagenCentral img{
-  margin: 20px 250px;
-  width:50%;
+  display: block;
+  margin:auto;
+  max-width: 60%;
 }
 
-#ImagenSecundaria{
+.ImagenSecundaria{
+  box-sizing: border-box;
   background-color: #d5c75f;
-  border:1px;
-  float:left;
-  padding: 2px;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
 }
 
-#ImagenSecundaria img{
-  width: 20%;
+.ImagenSecundaria img{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+}
+
+#Imagenes2{
+  display: flex;
 }
