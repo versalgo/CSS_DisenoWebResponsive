@@ -3,6 +3,10 @@ body{
   background-color: #02010a;
 }
 
+#contenido{
+  width: 1000px;
+  margin:auto;
+}
 header{
   background-color: #5b7989;
   border-radius: 10px;
@@ -24,4 +28,25 @@ header h1{
 #menu-principal a{
   text-align: right;
   width: 70%;
+}
+
+
+#ImagenCentral{
+  background-color: #82c3ab;
+}
+
+#ImagenCentral img{
+  margin: 20px 250px;
+  width:50%;
+}
+
+#ImagenSecundaria{
+  background-color: #d5c75f;
+  border:1px;
+  float:left;
+  padding: 2px;
+}
+
+#ImagenSecundaria img{
+  width: 20%;
 }
