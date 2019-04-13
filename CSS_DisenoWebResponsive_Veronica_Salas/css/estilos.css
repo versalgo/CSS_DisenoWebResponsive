@@ -1,5 +1,7 @@
 body{
-  font-family: Dancing Script;
+
+  font-family: 'Dancing Script';
+  font-size: 1.2em;
   background-color: #02010a;
   width: 1000px;
   margin:auto;
@@ -8,7 +10,7 @@ body{
 
 header{
   background-color: #5b7989;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   min-height: 100px;
   display: flex;
 }
@@ -16,6 +18,7 @@ header h1{
   color: white;
   text-shadow: 2px 2px #02010a;
   width: 70%;
+  margin-left: 10px;
 }
 #menu-principal{
   width: 25%;
@@ -31,6 +34,10 @@ header h1{
 
 img{
   max-width: 100%;
+  border: 1px solid;
+  -webkit-box-shadow:2px 2px 2px #02010a;
+  -moz-box-shadow:2px 2px 2px #02010a;
+  box-shadow: 2px 2px 2px #02010a;
 }
 
 #ImagenCentral{
@@ -56,9 +63,9 @@ img{
   margin-left: auto;
   margin-right: auto;
   border: 1px solid;
-  -webkit-box-shadow:2px 2px 2px #82c3a6;
-  -moz-box-shadow:2px 2px 2px #82c3a6;
-  box-shadow: 2px 2px 2px #82c3a6;
+  -webkit-box-shadow:2px 2px 2px #02010a;
+  -moz-box-shadow:2px 2px 2px #02010a;
+  box-shadow: 2px 2px 2px #02010a;
 
 }
 
@@ -73,9 +80,41 @@ img{
 #Img1:hover{
   transition: 1s;
   transform: rotate(10deg);
+  -webkit-box-shadow:2px 2px 2px #82c3a6;
+  -moz-box-shadow:2px 2px 2px #82c3a6;
+  box-shadow: 2px 2px 2px #82c3a6;
 }
 
 #Img2:hover{
   transition: 1s;
   transform:translate(20px, -5px);
+  -webkit-box-shadow:2px 2px 2px #82c3a6;
+  -moz-box-shadow:2px 2px 2px #82c3a6;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.ImagenSecundaria p{
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  min-height: 200px;
+  display: flex;
+  width: 100%;
+}
+
+.Pie {
+  margin:20px;
+  width: 25%
+}
+
+.red{
+  text-decoration: none;
+  font-size: 1em;
+}
+.red img{
+  width: 10px;
 }
