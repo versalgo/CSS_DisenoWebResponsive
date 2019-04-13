@@ -1,3 +1,4 @@
+/*Estos son los estilos para todo el cuerpo, el font-family esta ubicado como link en el archivo html*/
 body{
 
   font-family: 'Dancing Script';
@@ -10,7 +11,7 @@ body{
 #Contenido{
 
 }
-
+/*header con sus estilos y animaciones*/
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
@@ -24,6 +25,20 @@ header h1{
   width: 70%;
   margin-left: 10px;
 }
+
+@-webkit-keyframes encabezado{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+/*Este es el navbar*/
 #menu-principal{
   width: 25%;
   display: flex;
@@ -38,6 +53,7 @@ header h1{
   width: 70%;
 }
 
+/*Este es el estilo que se pidio para todas las imagenes*/
 img{
   max-width: 100%;
   border: 1px solid;
@@ -46,6 +62,7 @@ img{
   box-shadow: 2px 2px 2px #02010a;
 }
 
+/*Los estilos para la columna e imagen central de la pagina de inicio*/
 #ImagenCentral{
   background-color: #82c3ab;
   padding: 1em;
@@ -57,6 +74,7 @@ img{
   max-width: 60%;
 }
 
+/*Estilos para las imagenes secundaria de la pagina de inicio (columna e imagens)*/
 .ImagenSecundaria{
   box-sizing: border-box;
   background-color: #d5c75f;
@@ -89,6 +107,12 @@ img{
   letter-spacing: 5px;
 }
 
+.ImagenSecundaria p{
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*Estas son las transiciones para las imagenes secundarias de la pagina de inicio*/
 #Img1:hover{
   transition: 1s;
   transform: rotate(10deg);
@@ -105,28 +129,7 @@ img{
   box-shadow: 2px 2px 2px #82c3a6;
 }
 
-.ImagenSecundaria p{
-  text-align: center;
-  text-decoration: underline;
-}
-
-footer{
-  background-color: #C6d5c5;
-  border-radius: 0px 0px 10px 10px;
-  min-height: 200px;
-  display: flex;
-  width: 100%;
-}
-
-.Pie {
-  margin:20px;
-  width: 25%
-}
-
-.red img{
-  width: 10px;
-}
-
+/*Los estilos de la galeria de la pagina retratos y paisajes*/
 #galeria{
   box-sizing: border-box;
   background-color: #d5c75f;
@@ -144,6 +147,7 @@ footer{
   margin:10px;
 }
 
+/*Los filtros para las 6 fotos de la pagina retratos y paisajes*/
 .PR1{
   -webkit-filter:blur(10px);
   -moz-filter:blur(10px);
@@ -163,14 +167,20 @@ footer{
 }
 
 
-@-webkit-keyframes encabezado{
-  0%{
-    margin-top: 150%;
-  }
-  60%{
-    margin-top: -5%;
-  }
-  100%{
-    margin-top: 0%;
-  }
+/*Los estilos del footer para todo su contenido*/
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  min-height: 200px;
+  display: flex;
+  width: 100%;
+}
+
+.Pie {
+  margin:20px;
+  width: 25%
+}
+
+.red img{
+  width: 10px;
 }
