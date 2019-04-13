@@ -56,8 +56,26 @@ img{
   margin-left: auto;
   margin-right: auto;
   border: 1px solid;
+  -webkit-box-shadow:2px 2px 2px #82c3a6;
+  -moz-box-shadow:2px 2px 2px #82c3a6;
+  box-shadow: 2px 2px 2px #82c3a6;
+
 }
 
 #Imagenes2{
   display: flex;
+}
+
+.enlace{
+  text-decoration: underline;
+}
+
+#Img1:hover{
+  transition: 1s;
+  transform: rotate(10deg);
+}
+
+#Img2:hover{
+  transition: 1s;
+  transform:translate(20px, -5px);
 }
