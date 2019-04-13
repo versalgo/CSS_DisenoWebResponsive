@@ -7,6 +7,9 @@ body{
   margin:auto;
 }
 
+#Contenido{
+
+}
 
 header{
   background-color: #5b7989;
@@ -29,6 +32,8 @@ header h1{
 
 #menu-principal a{
   text-align: right;
+  color: white;
+  font-size: 1.2em;
   width: 70%;
 }
 
@@ -77,6 +82,12 @@ img{
   text-decoration: underline;
 }
 
+.ImagenSecundaria p{
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
 #Img1:hover{
   transition: 1s;
   transform: rotate(10deg);
@@ -111,10 +122,41 @@ footer{
   width: 25%
 }
 
-.red{
-  text-decoration: none;
-  font-size: 1em;
-}
 .red img{
   width: 10px;
+}
+
+#galeria{
+  box-sizing: border-box;
+  background-color: #d5c75f;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.ImagenPR img{
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  flex-direction: column;
+  margin:10px;
+}
+
+.PR1{
+  -webkit-filter:blur(10px);
+  -moz-filter:blur(10px);
+  filter: blur(10px);
+}
+
+.PR3{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.ImagenPR>img:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
