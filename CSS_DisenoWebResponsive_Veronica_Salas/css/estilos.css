@@ -1,52 +1,56 @@
 /*Estos son los estilos para todo el cuerpo, el font-family esta ubicado como link en el archivo html*/
-body{
+body {
 
   font-family: 'Dancing Script';
   font-size: 1.2em;
   background-color: #02010a;
   width: 1000px;
-  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#Contenido{
-
+#Contenido {
+  width: 1000px;
+  margin: auto;
 }
+
 /*header con sus estilos y animaciones*/
-header{
+header {
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   min-height: 100px;
   display: flex;
   animation: encabezado 2s;
 }
-header h1{
+
+header h1 {
   color: white;
   text-shadow: 2px 2px #02010a;
   width: 70%;
   margin-left: 10px;
 }
 
-@-webkit-keyframes encabezado{
-  0%{
+@-webkit-keyframes encabezado {
+  0% {
     margin-top: 150%;
   }
-  60%{
+  60% {
     margin-top: -5%;
   }
-  100%{
+  100% {
     margin-top: 0%;
   }
 }
 
 /*Este es el navbar*/
-#menu-principal{
+#menu-principal {
   width: 25%;
   display: flex;
   flex-direction: row;
   padding-top: 35px;
 }
 
-#menu-principal a{
+#menu-principal a {
   text-align: right;
   color: white;
   font-size: 1.2em;
@@ -54,7 +58,7 @@ header h1{
 }
 
 /*Este es el estilo que se pidio para todas las imagenes*/
-img{
+img {
   max-width: 100%;
   border: 1px solid;
   -webkit-box-shadow:2px 2px 2px #02010a;
@@ -63,27 +67,30 @@ img{
 }
 
 /*Los estilos para la columna e imagen central de la pagina de inicio*/
-#ImagenCentral{
+#ImagenCentral {
   background-color: #82c3ab;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%
 }
 
-#ImagenCentral img{
+#ImagenCentral img {
   display: block;
   margin:auto;
   max-width: 60%;
 }
 
 /*Estilos para las imagenes secundaria de la pagina de inicio (columna e imagens)*/
-.ImagenSecundaria{
+.ImagenSecundaria {
   box-sizing: border-box;
   background-color: #d5c75f;
   padding: 1em;
   width: 100%;
   text-align: center;
+  width: 50%
 }
 
-.ImagenSecundaria img{
+.ImagenSecundaria img {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid;
@@ -93,27 +100,27 @@ img{
 
 }
 
-#Imagenes2{
+#Imagenes2 {
   display: flex;
 }
 
-.enlace{
+.enlace {
   text-decoration: underline;
 }
 
-.ImagenSecundaria p{
+.ImagenSecundaria p {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 5px;
 }
 
-.ImagenSecundaria p{
+.ImagenSecundaria p {
   text-align: center;
   text-decoration: underline;
 }
 
 /*Estas son las transiciones para las imagenes secundarias de la pagina de inicio*/
-#Img1:hover{
+#Img1:hover {
   transition: 1s;
   transform: rotate(10deg);
   -webkit-box-shadow:2px 2px 2px #82c3a6;
@@ -121,16 +128,16 @@ img{
   box-shadow: 2px 2px 2px #82c3a6;
 }
 
-#Img2:hover{
+#Img2:hover {
   transition: 1s;
-  transform:translate(20px, -5px);
-  -webkit-box-shadow:2px 2px 2px #82c3a6;
-  -moz-box-shadow:2px 2px 2px #82c3a6;
+  transform: translate(20px, -5px);
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+  -moz-box-shadow: 2px 2px 2px #82c3a6;
   box-shadow: 2px 2px 2px #82c3a6;
 }
 
 /*Los estilos de la galeria de la pagina retratos y paisajes*/
-#galeria{
+#galeria {
   box-sizing: border-box;
   background-color: #d5c75f;
   padding: 1em;
@@ -139,7 +146,7 @@ img{
   display: flex;
 }
 
-.ImagenPR img{
+.ImagenPR img {
   max-width: 300px;
   max-height: 300px;
   text-align: center;
@@ -148,19 +155,19 @@ img{
 }
 
 /*Los filtros para las 6 fotos de la pagina retratos y paisajes*/
-.PR1{
-  -webkit-filter:blur(10px);
-  -moz-filter:blur(10px);
+.PR1 {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
   filter: blur(10px);
 }
 
-.PR3{
+.PR3 {
   -webkit-filter: sepia(90%);
   -moz-filter: sepia(90%);
   filter: sepia(90%);
 }
 
-.PRPAR{
+.PRPAR {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -168,7 +175,7 @@ img{
 
 
 /*Los estilos del footer para todo su contenido*/
-footer{
+footer {
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   min-height: 200px;
@@ -181,6 +188,46 @@ footer{
   width: 25%
 }
 
-.red img{
+.red img {
   width: 10px;
+}
+
+@media screen and (max-width:900px) {
+  #Contenido {
+    width: 100%;
+  }
+
+  #Imagenes2,
+  #galeria,
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  #Imagenes2 .ImagenSecundaria,
+  #galeria.ImagenPR,
+  footer,
+  header,
+  .Pie,
+  header h1 {
+    width: 100%
+  }
+
+  body {
+    width: 100%;
+  }
+
+  #menu-principal {
+    width: 80%;
+  }
+
+  #menu-principal,
+  h1 {
+    text-align: center;
+  }
+
+  footer .Pie h1{
+    text-align: left;
+  }
+
 }
