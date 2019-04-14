@@ -2,6 +2,7 @@
 body {
 
   font-family: 'Dancing Script';
+
   font-size: 1.2em;
   background-color: #02010a;
   width: 1000px;
@@ -121,16 +122,20 @@ img {
 
 /*Estas son las transiciones para las imagenes secundarias de la pagina de inicio*/
 #Img1:hover {
-  transition: 1s;
+  transition-duration: 1s;
   transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
   -webkit-box-shadow:2px 2px 2px #82c3a6;
   -moz-box-shadow:2px 2px 2px #82c3a6;
   box-shadow: 2px 2px 2px #82c3a6;
 }
 
 #Img2:hover {
-  transition: 1s;
+  transition-duration: 1s;
   transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+  -moz-transform: translate(20px, -5px);
   -webkit-box-shadow: 2px 2px 2px #82c3a6;
   -moz-box-shadow: 2px 2px 2px #82c3a6;
   box-shadow: 2px 2px 2px #82c3a6;
@@ -147,8 +152,8 @@ img {
 }
 
 .ImagenPR img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 70%;
+  max-height: 70%;
   text-align: center;
   flex-direction: column;
   margin:10px;
@@ -178,7 +183,7 @@ img {
 footer {
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
-  min-height: 200px;
+  min-height: 100px;
   display: flex;
   width: 100%;
 }
@@ -189,7 +194,7 @@ footer {
 }
 
 .red img {
-  width: 10px;
+  width: 5%;
 }
 
 @media screen and (max-width:900px) {
@@ -226,8 +231,13 @@ footer {
     text-align: center;
   }
 
-  footer .Pie h1{
+  footer .Pie {
+    margin:0.5%;
+  }
+  footer .Pie h1, .Pie p{
+    font-size: 1em;
     text-align: left;
+    justify-content: center;
   }
 
 }
